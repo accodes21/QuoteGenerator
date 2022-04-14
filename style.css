@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(140, 54, 180),rgb(242, 62, 46),rgb(242, 255, 0));
+    background-size: 400% 400%;
+    animation: animate 10s   infinite  ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.container{
+    width: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .4);
+}
+
+.container header{
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container .content{
+    margin: 25px 0;
+}
+
+.content .box{
+    display: flex;
+    justify-content: center;
+}
+
+.box i{
+    font-size: 25px;
+}
+
+.box i:first-child{
+    margin: 3px 10px 0 0;
+}
+.box i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px ;
+}
+
+.box .quote{
+    font-size: 20px;
+    text-align: center;
+    word-break:normal;
+}
+
+.content .author{
+    display: flex;
+    margin-top: 15px;
+    font-size: 18px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+
+.btn{
+    margin-top: 15px;
+    border-top: 1px solid black;
+}
+.btn .features{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.features ul li:hover{
+    color:white;
+    background-color: black;
+}
+.features button{
+    border: none;
+    outline: none;
+    background-color: black;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button.loading{
+    opacity: .7;
+}
+
+footer{
+    margin-top:  60px;;
+}
