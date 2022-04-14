@@ -130,3 +130,24 @@ button.loading{
 footer{
     margin-top:  60px;;
 }
+
+@media screen and (max-width:550px){
+    .container{
+        width:300px;
+    }
+
+    .container header{
+        font-size: 25px;
+    }
+
+    .features ul li{
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .features button{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
